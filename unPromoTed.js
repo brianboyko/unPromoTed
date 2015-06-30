@@ -11,7 +11,7 @@ var findTed = function() {
 
 var killTed = function() {
     document.getElementById('image').innerHTML =
-        'Promoted Content Removed by unPromotTed';
+        'Promoted Content Removed by unPromotTed.';
 };
 
 var runScript = function() {
@@ -22,9 +22,10 @@ var runScript = function() {
         killTed();
     };
 };
-document.addEventListener("DOMContentLoaded", function(event) {
-        var isImgur = false;
+
+document.addEventListener("DOMContentLoaded", function() {
         if (window.location.href.indexOf("imgur.com") > -1) {
-            isImgur = true;
+            runScript();
         };
 });
+
