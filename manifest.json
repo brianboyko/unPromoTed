@@ -16,12 +16,12 @@
     "content_scripts": [
     {
       "matches": ["*://*.imgur.com/*"],
-      "js": ["unPromoTed.js"]
+      "js": ["unPromoTed.user.js"]
     }
   ],
   
   "permissions": [
-    "activeTab",
+    "tabs",
     "https://ajax.googleapis.com/"
   ]
 }
